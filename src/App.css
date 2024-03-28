@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.news{
+  width: 24%;
+  padding: 20px;
+  background-color: lavender;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  row-gap: 12px;
+}
+.news-article{
+  width: 100%;
+  padding: 30px 5%;
+  background-color: lightgray;
+  display: flex;
+  column-gap: 1%;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.header{
+  width: 100%;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+}
+input{
+  width: 60%;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+.news-img{
+  width: 100%;
+  height: 200px;
+  background-color: lightcoral;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-size: cover;
+  background-image: url('https://www.shutterstock.com/image-vector/no-photo-available-vector-icon-260nw-2123578658.jpg');
+}
+
+.news-img img{
+  width: 100%;
+}
+.source{
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+}
+.rear-head{
+  display: flex;
+  justify-content:space-around;
+}
+
+.react-date-picker__wrapper{
+     width: 100%;
+  background-color: black;
   color: white;
+  display: flex;
 }
-
-.App-link {
-  color: #61dafb;
+/* To specify height and font size */
+.e-input-group input.e-input, .e-input-group.e-control-wrapper input.e-input {
+  height: 40px;
+  font-size: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* To specify background color and font size */
+.e-input-group .e-input-group-icon:last-child, .e-input-group.e-control-wrapper .e-input-group-icon:last-child {
+  font-size: 12px;
+  background-color: darkgray;
 }

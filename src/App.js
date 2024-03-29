@@ -64,7 +64,7 @@ function App() {
               <News article={article} key={article.id}/>
              )
           }) :
-          <h3>No News Found For The Searched Text</h3>
+          <h3>No News Found For The Context</h3>
          }
      </section>
     </div>
